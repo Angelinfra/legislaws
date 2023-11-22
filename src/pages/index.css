@@ -1,0 +1,1559 @@
+#toptoggle {
+  will-change: display;
+  transition: all 0.3s linear;
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  background-color: black;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  z-index: 99;
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+}
+
+#toptoggle:hover {
+  box-shadow: 0px 0px 4px 0px darkgray;
+}
+
+.carousel {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+
+.car-heading {
+  text-decoration: 2px underline orange;
+  margin-bottom: 20px;
+  text-underline-offset: 6px;
+  font-size: 25px;
+}
+.car-card {
+  height: 300px;
+  margin: 5px;
+  padding: 5px;
+  background-color: lightblue;
+  text-align: center;
+  line-height: 200px;
+}
+
+.animate {
+  background: none;
+  border: 2px solid black;
+  border-style: dashed;
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  margin-top: 30px;
+  right: 50px;
+  will-change: transform;
+  animation: rotate 10s 2s infinite backwards linear;
+  z-index: -150;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.quote-text {
+  margin: 0px 25px 0px 25px;
+  background-color: #ffefcb;
+  padding: 60px 60px 30px 60px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px lightgray;
+}
+.quote-text .h3 {
+  color: #284074;
+  font-family: Cormorant, serif;
+  font-weight: 600;
+  font-size: 37px;
+  line-height: 35px;
+}
+
+.quote-icon {
+  color: #284074;
+  position: relative;
+  top: 25px;
+  left: 60px;
+  font-size: 60px;
+}
+.quote-icon1 {
+  display: none;
+  position: relative;
+  float: right;
+  top: -25px;
+  right: 40px;
+  font-size: 55px;
+  color: darkslateblue;
+}
+
+.quote {
+  color: black;
+  /* font-family: "Basel Grotesk", sans-serif; */
+
+  font-weight: 500;
+  font-size: 21px;
+  text-align: justify;
+  font-family: Cormorant, serif;
+  line-height: 30px;
+  padding: 0px 10px 0px 10px;
+}
+.quote strong {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: Cormorant, serif;
+}
+.bar {
+  height: 2px;
+  width: 20px;
+  background-color: black;
+  margin: 15px 5px 0px 0px;
+}
+
+.spacer {
+  margin-right: 60px;
+}
+.mission {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 500;
+  padding-right: 20px;
+}
+
+.vision-img {
+  z-index: 1;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  will-change: transform;
+  transform: translate(-20px, -20px);
+  animation: compress 5s infinite forwards ease;
+}
+@keyframes compress {
+  0%,
+  100% {
+    transform: translate(-20px, -20px);
+  }
+  50% {
+    transform: translate(-90px, -90px);
+  }
+}
+.vision-img-outer {
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 20px;
+  z-index: 10;
+  content: "";
+  width: 95%;
+  /* background-color: #1c305c; */
+  background: #152547;
+
+  height: min-content;
+  position: relative;
+  transition: all 0.3s ease;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 25px 100px 0 rgba(10, 10, 10, 0.149);
+  padding-bottom: 30px;
+}
+
+.img-back-text {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: -80px;
+}
+.vision-p p {
+  padding: 0px 20px 20px 20px;
+  width: 100%;
+  /* font-family: "Canva Sans", "Open Sans", sans-serif; */
+  /* font-family: "Basel Grotesk", sans-serif; */
+  /* font-family: "Amazon Ember", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  /* font-family: "Gustavo", sans-serif;
+   */
+  font-family: "Ubuntu variable", Ubuntu, -apple-system, "Segoe UI", Roboto,
+    Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  line-height: 28px;
+  color: #111111;
+  text-align: justify;
+  font-weight: 400;
+}
+.vision-p h2 {
+  padding: 19px;
+  color: black;
+  /* font-family: "Cormorant", serif; */
+  /* font-family: "Gustavo", sans-serif; */
+  font-family: "Ubuntu variable", Ubuntu, -apple-system, "Segoe UI", Roboto,
+    Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+}
+.underline {
+  width: 70px;
+  height: 3px;
+  background-color: #385dad;
+}
+
+footer {
+  /* box-shadow: 0px 0px 10px 0px rgb(37, 37, 37); */
+  /* background: #0b1835; */
+  background: #152547;
+}
+
+.hr {
+  margin: -10px 0px 0px 0px;
+  border-width: 1.5px;
+  border-color: rgb(158, 157, 157);
+  padding: 0px 10px 0px 10px;
+}
+
+.under-footer {
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #152547;
+  color: rgb(226, 225, 225);
+}
+
+.profile-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  height: 50px;
+  width: 350px;
+}
+
+.profile-icon {
+  width: 30px;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+  margin: 0px 5px 0px 5px;
+  cursor: pointer;
+}
+
+.profile-icon:hover {
+  font-size: 25px;
+}
+
+.copyrightsection {
+  width: 350px;
+  text-align: left;
+  padding-left: 30px;
+}
+.copyrightsection b {
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+.blog-title {
+  /* background-color: #1c305c; */
+  background: #152547;
+
+  height: auto;
+  padding: 80px 0px 0px 20px;
+}
+
+.blog-title h1 {
+  margin-left: -5px;
+  font-size: 35px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.col-item {
+  max-width: 300px;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 20px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.img-outer {
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-blog {
+  object-fit: cover;
+  transition: all 0.3s linear;
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  transform: scale(1);
+}
+
+.col-item:hover .img-blog {
+  transform: scale(1.2);
+  filter: opacity(0.8);
+}
+
+.date {
+  font-weight: 400;
+  font-size: 14px;
+  margin: 10px 0px 10px 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(90, 88, 88);
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+.col-item h3 {
+  line-height: 28px;
+  font-size: 18px;
+  padding-bottom: 10px;
+  font-family: "SF Pro JP", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Arial,
+    sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-align: left;
+}
+
+.col-item span {
+  cursor: pointer;
+  color: rgb(95, 94, 94);
+}
+
+.col-item span:hover {
+  text-decoration: underline 3px slategray;
+  color: #000000;
+}
+
+.outer-linker {
+  display: flex;
+  justify-content: center;
+}
+
+.linker {
+  transform: translateY(-80px);
+  display: none;
+  cursor: pointer;
+  color: rgb(231, 22, 22);
+  font-size: 55px;
+  margin-bottom: -120px;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+.sub-title {
+  height: auto;
+  padding: 75px 0px 0px 20px;
+  /* background-color: #1c305c; */
+  background: #152547;
+
+  color: white;
+}
+
+.sub-title h1 {
+  margin-top: -8px;
+  font-family: "Ubuntu variable", Ubuntu, -apple-system, "Segoe UI", Roboto,
+    Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  padding-bottom: 10px;
+  word-spacing: 0px;
+  font-size: medium;
+}
+
+.card-blog-outer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 70px;
+  background-color: white;
+}
+
+.date_img {
+  padding: 20px;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.img-blog-outer {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+.img_blog_more {
+  width: 100%;
+  height: auto;
+  object-position: center;
+  border-radius: 15px;
+}
+
+.More_Content {
+  padding: 20px;
+}
+.More_Content h3 {
+  /* font-family: "Times New Roman", Times, serif; */
+  font-family: "Ubuntu variable", Ubuntu, -apple-system, "Segoe UI", Roboto,
+    Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+}
+.More_Content p {
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  line-height: 28px;
+
+  /* font-family: "SF Pro JP", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Arial,
+    sans-serif; */
+  font-family: "Ubuntu variable", Ubuntu, -apple-system, "Segoe UI", Roboto,
+    Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 0.2px;
+  word-spacing: 1px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #111111;
+}
+
+.More_Content p::selection {
+  background-color: red;
+  color: white;
+}
+
+.path-container {
+  color: white;
+  border-bottom: 1.5px solid lightgray;
+  margin-right: 10px;
+  padding-bottom: 5px;
+}
+
+.path {
+  color: white;
+  cursor: pointer;
+}
+.path:hover {
+  text-decoration: underline 1px white;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+.main-blog-card {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 2px 0px rgb(118, 117, 117);
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px;
+}
+.search-container {
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-outer {
+  float: left;
+  border: 2px solid black;
+  padding: 5px 15px 5px 15px;
+  display: flex;
+  width: max-content;
+  height: 40px;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.search {
+  width: 160px;
+  border: none;
+}
+.search:focus {
+  outline: none;
+}
+
+.search::placeholder {
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+#iconSearch {
+  margin-right: 10px;
+  margin-left: -6px;
+  font-size: 20px;
+  font: bolder;
+}
+.close {
+  cursor: pointer;
+}
+
+/* ------------toggle button----------------------------- */
+
+.Law-columns {
+  columns: 100% 1;
+  column-gap: 5px;
+  padding-bottom: 20px;
+}
+
+.Law-columns ul {
+  list-style-type: decimal;
+}
+
+.Law-col-item {
+  margin-bottom: 10px;
+  padding: 7px;
+}
+.Law-col-item {
+  cursor: pointer;
+  width: fit-content;
+  font-family: "Ubuntu variable", Ubuntu, -apple-system, "Segoe UI", Roboto,
+    Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  margin-bottom: 5px;
+  line-height: 28px;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.arrowR {
+  margin-top: 5px;
+  transition: all 0.3s linear;
+  font-size: 15px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 30px;
+}
+
+.Law-col-item li {
+  background: none;
+  z-index: 1;
+}
+
+.Law-col-item li ::after {
+  background: rebeccapurple;
+  width: 100px;
+  height: 200px;
+  z-index: 99;
+}
+.not-found {
+  font-family: karla;
+  text-align: center;
+  display: block;
+}
+.not-found h4 {
+  color: red;
+  font-size: 45px;
+}
+.not-found h6 {
+  font-size: 18px;
+}
+.not-found h6 b {
+  color: red;
+}
+
+.Law-col-item:hover {
+  text-decoration: underline 1.5px solid #1da1f2;
+  text-underline-offset: 5px;
+}
+
+/* ------------------------------------ */
+
+.SubLawContainer {
+  padding: 10px 10px 15px 20px;
+}
+
+.chapter-name {
+  text-transform: capitalize;
+  font-family: "Ubuntu variable", Ubuntu, -apple-system, "Segoe UI", Roboto,
+    Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  line-height: 40px;
+  font-style: normal;
+  font-weight: 650;
+  font-size: 22px;
+  list-style: 32px;
+  color: #0d1216;
+  text-decoration: underline 2px #054eae;
+  text-underline-offset: 6px;
+  margin-top: 20px;
+  /* font-family: "Google Sans", Roboto, Arial, sans-serif; */
+}
+
+.chapter-name span {
+  text-transform: capitalize;
+}
+
+.Sections-names {
+  list-style-type: none;
+  padding-left: 50px;
+}
+.Sections-names li {
+  margin-left: -30px;
+  font-family: "Ubuntu variable", Ubuntu, -apple-system, "Segoe UI", Roboto,
+    Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-left: 3px solid lightgray;
+  padding: 0px 0px 0px 6px;
+  width: fit-content;
+  line-height: 26px;
+}
+
+.Sections-names li:hover {
+  border-color: #1560c3;
+}
+
+.sec-heading {
+  font-size: 30px;
+  padding-left: 20px;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  text-decoration: underline 2px darkgreen;
+  text-underline-offset: 3px;
+}
+
+.blog-icons {
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+  border-radius: 10px;
+  width: fit-content;
+}
+.icon {
+  cursor: pointer;
+  font-size: 35px;
+  margin-right: 20px;
+  width: fit-content;
+}
+.facebook {
+  color: #3c5282;
+}
+
+.instagram {
+  background: linear-gradient(to right bottom, red, violet, pink, orange);
+  border-radius: 12px;
+  padding: 3px;
+  color: white;
+}
+
+.linkedin {
+  color: #195e7b;
+  border-radius: 5px;
+}
+
+.twitter {
+  background-color: #3489c2;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.title-main {
+  margin-top: 45px;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: last baseline;
+  flex-wrap: wrap;
+  /* background-color: #1c305c; */
+  background: #152547;
+}
+
+.btn1 {
+  display: inline;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 5px 15px 5px 15px;
+  margin-right: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  width: fit-content;
+  height: fit-content;
+}
+
+.btn1:active {
+  background-color: white;
+  color: black;
+}
+
+.btn1:hover {
+  background-color: white;
+  color: black;
+}
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 50px;
+  padding: 13px 10px 10px 10px;
+  overflow-x: hidden;
+  /* background-color: #1c305c; */
+  background: #152547;
+
+  margin-top: 20px;
+  color: white;
+
+  transition: all 0.3s linear;
+}
+
+.track {
+  transition: all 0.3s linear;
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 10s linear infinite;
+}
+.marquee span {
+  border-radius: 6px;
+  color: white;
+  font-size: 19px;
+  width: fit-content;
+  height: auto;
+  font-weight: 500;
+  padding: 2px 10px 2px 10px;
+  font-family: "Canva Sans", "Open Sans", sans-serif;
+  margin: 0px 40px 0px 40px;
+  transition: all 0.3s linear;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-40%);
+  }
+}
+
+.wrapper {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-right: 30px;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Avenir Next", sans-serif;
+  justify-content: space-around;
+  height: fit-content;
+  will-change: transform;
+  animation: scroll-bt 2s ease forwards;
+}
+
+@keyframes scroll-bt {
+  0% {
+    transform: translateY(-250px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.wrapper .icon {
+  border: 3px solid #fff;
+  border-radius: 40px;
+  position: relative;
+  background: #fff;
+  padding: 0px 20px 0px 20px;
+  margin: 10px;
+  width: fit-content;
+  color: black;
+  height: auto;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover {
+  border-color: #1877f2;
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 25px;
+  background: #1877f2;
+  color: #fff;
+  padding: 0px 10px 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  top: -60px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #1877f2;
+  color: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .instagram {
+  padding: 0px 25px 0px 25px;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  animation: redi 2s linear forwards infinite;
+}
+
+.wrapper .instagram:hover {
+  border-color: #e4405f;
+}
+
+#t1 {
+  background-color: hsl(349, 75%, 57%);
+  animation: tp-bt 3s alternate infinite;
+}
+#t1::before {
+  background-color: #e4405f;
+  animation: tp-bt 3s alternate infinite;
+}
+
+@keyframes tp-bt {
+  0%,
+  100% {
+    margin-top: 10px;
+  }
+
+  50% {
+    margin-top: -15px;
+  }
+}
+
+.Counters {
+  margin: 0px 0px 10px 0px;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 0px 20px 0px;
+}
+
+.counter-title {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 400px;
+  min-width: 300px;
+}
+.counter-title h2 {
+  font-family: "Gustavo", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.counter {
+  background-color: #f8f9fa;
+  width: 220px;
+  height: auto;
+  margin: 20px;
+
+  z-index: 0;
+}
+.counter::before {
+  content: "";
+  z-index: 10;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.count-d2 h4 {
+  font-family: "Gustavo", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 10px 0px 10px;
+  text-align: center;
+}
+
+.c-icon {
+  display: none;
+}
+
+.count-value {
+  font-family: Gustavo, sans-serif;
+  /* font-family: "Ubuntu", sans-serif; */
+  text-align: center;
+  font-weight: 500;
+  font-size: 60px;
+  color: #12336a;
+}
+
+.contact-bf {
+  font-family: "OptimaLTW02-Roman", sans-serif;
+  font-size: 45px;
+  margin: 50px 0px 0px 0px;
+  font-weight: 600;
+  display: inline-block;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.contact-bf:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 25%;
+  border-bottom: 2px solid #333;
+}
+
+.SubLawDetails {
+  font-family: "Ubuntu variable", Ubuntu, -apple-system, "Segoe UI", Roboto,
+    Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  text-align: justify;
+  padding: 20px 20px 0px 20px;
+  margin-top: -8px;
+}
+.SubLawDetails h3 {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 0.2px;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+.SubLawDetails ul {
+  padding: 0px;
+  font-weight: 400;
+  color: #262626;
+  font-size: 17px;
+  list-style-type: none;
+  line-height: 28px;
+}
+.SubLawDetails ul li {
+  font-family: "Ubuntu variable", Ubuntu, -apple-system, "Segoe UI", Roboto,
+    Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 5px;
+  line-height: 28px;
+}
+
+#innerlist {
+  margin-top: 5px;
+  line-height: 30px;
+  list-style-type: none;
+  padding-left: 40px;
+  list-style-position: inside;
+}
+
+/* .summary p {
+  font-family: "Ubuntu variable", Ubuntu, -apple-system, "Segoe UI", Roboto,
+    Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  padding: 15px 15px 0px 15px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  text-indent: 40px;
+} */
+
+.summary p {
+  font-family: "Ubuntu variable", Ubuntu, -apple-system, "Segoe UI", Roboto,
+    Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  padding: 5px 5px 0px 5px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+}
+.summary-ul li {
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
+.works-container {
+  padding: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.work {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+}
+
+.workimg {
+  border: 2px solid lightgray;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  filter: grayscale(10%);
+  transition: all 0.3s ease;
+}
+
+.work-title {
+  font-size: 20px;
+  font-family: "Gustavo", sans-serif;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  transition: all 0.3s ease;
+  padding-left: 10px;
+  transform: translateY(-80px);
+}
+.work-title span {
+  width: fit-content;
+  cursor: pointer;
+  color: darkgrey;
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+}
+.work-title span:hover {
+  text-decoration: underline white 2px;
+  text-underline-offset: 6px;
+}
+
+.work:hover .workimg {
+  transform: scale(1.3);
+  filter: blur(0.5px);
+}
+
+.about-img-outer {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  border: 8px solid rgb(176, 115, 2);
+  display: flex;
+  align-items: center;
+}
+
+.about-img {
+  width: 250px;
+  transform: translateX(30px);
+}
+.about-para {
+  font-family: "Ubuntu variable", Ubuntu, -apple-system, "Segoe UI", Roboto,
+    Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  line-height: 28px;
+  color: #111111;
+  text-align: justify;
+  font-weight: 400;
+  padding: 0px 20px 0px 20px;
+}
+
+#bt1 {
+  margin: 5px 0px 0px 0px;
+  background: none;
+  color: orange;
+  padding: 3px 20px 4px 20px;
+  border: 2px solid orange;
+  outline: none;
+  font-size: 18px;
+  border-radius: 25px;
+}
+
+/* .about-container {
+  box-shadow: 0px 0px 10px 0px lightgray;
+  margin: 0px -50px 0px -50px;
+  padding: 20px 10px 20px 10px;
+} */
+
+#bt1:hover {
+  background: rgb(152, 99, 2);
+  color: white;
+}
+
+.form {
+  margin: 0px 40px 30px 40px;
+  will-change: contents;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.toggler {
+  box-shadow: 0px 0px 1px 0px lightgray;
+  background: rgb(231, 228, 228);
+  height: 30px;
+  width: 50px;
+  border-radius: 30px;
+  padding: 5px;
+  margin-left: 20px;
+}
+.togglediv {
+  background-color: #1877f2;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+.contact-title {
+  height: 250px;
+  background: url(../Images/contact.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: -99;
+  text-align: center;
+}
+
+.top-title {
+  z-index: -100;
+  height: 240px;
+  text-align: center;
+  background-color: rgba(50, 50, 50, 0.6);
+}
+
+.top-title::before {
+  content: "Contact US";
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+  margin-left: 20px;
+  margin-top: 0px;
+  text-decoration: underline 2px orange;
+  text-underline-offset: 6px;
+  display: flex;
+  align-items: last baseline;
+  height: 100px;
+}
+.top-title::after {
+  /* content: "Feel free to contact us"; */
+  z-index: 100;
+  position: absolute;
+  color: rgb(242, 174, 47);
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 20px;
+  display: flex;
+  align-items: last baseline;
+  height: 150px;
+  margin-top: 45px;
+}
+
+.contact-title h5 {
+  z-index: 99;
+  color: white;
+  font-size: 25px;
+  margin-top: -20px;
+}
+
+.Details-bar {
+  background: rgb(59, 59, 59);
+  height: fit-content;
+  min-height: 70px;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px 30px 0px 30px;
+  color: white;
+}
+.Details-bar .text-details {
+  font-family: "Ubuntu variable", Ubuntu, -apple-system, "Segoe UI", Roboto,
+    Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  word-spacing: 1px;
+  font-size: 24px;
+  height: fit-content;
+}
+.mode {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+.pos-top {
+  background: white;
+  width: 98%;
+  padding: 20px;
+  box-shadow: 0 25px 100px 0 rgba(0, 0, 0, 0.1490196078);
+  transform: translateY(-50px);
+  border-radius: 20px;
+}
+
+.contact-title span {
+  color: rgb(243, 187, 85);
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.Detail-btn {
+  float: right;
+  font-size: 16px;
+  border: 2px solid orange;
+  width: fit-content;
+  max-width: fit-content;
+  height: fit-content;
+  border-radius: 5px;
+  position: relative;
+  padding: 2px 15px 1px 15px;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: none;
+  margin-bottom: 10px;
+}
+
+.Detail-btn:hover {
+  color: orange;
+  border-color: white;
+}
+
+.input {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(225, 224, 224);
+  border: none;
+  border-radius: 30px;
+  padding: 0px 30px 0px 30px;
+}
+.txt {
+  margin-top: 20px;
+  width: 100%;
+  background-color: rgb(225, 224, 224);
+  border: none;
+  padding: 10px 30px 0px 30px;
+  border-radius: 30px;
+  min-height: 40px;
+}
+
+.input::placeholder,
+.txt::placeholder {
+  color: #1560c3;
+  font-weight: 300;
+}
+
+.contact-btn {
+  border: 2px solid lightgray;
+  padding: 8px 15px 6px 15px;
+  background: none;
+  border-radius: 30px;
+  float: left;
+  color: #1560c3;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Gustavo", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #3f8df3;
+  color: white;
+}
+
+.input:focus {
+  border: 2px solid #3e8cf2;
+}
+
+.d-block {
+  height: 350px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.carousel-container {
+  padding: 0px 30px 0px 30px;
+  border-radius: 10px;
+}
+
+.carousel {
+  box-shadow: 0 0px 10px 0 lightgray;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.button {
+  background: white;
+}
+
+.swipe-icons {
+  font-size: 35px;
+  color: white;
+}
+#carousel-indicators {
+  background: #152547;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.carousel-caption {
+  background-color: rgba(24, 23, 23, 0.8);
+  color: white;
+  border-radius: 10px;
+  height: 300px;
+  overflow: hidden;
+  /* width: 100%; */
+}
+
+@media (max-width: 1079px) {
+  .works-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .work {
+    margin: 0px 10px 10px 10px;
+  }
+  .workimg {
+    border: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .form {
+    margin: 0px 5px 0px 5px;
+  }
+  .bar {
+    margin: 12px 5px 0px 0px;
+  }
+  .outer-li {
+    border-bottom: 1px solid rgb(225, 223, 223);
+  }
+  .Details-bar .text-details {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+    letter-spacing: 0.1px;
+  }
+  .Detail-btn::selection {
+    background: none;
+  }
+
+  .contact-btn {
+    font-size: 15px;
+    padding: 3px 15px 3px 15px;
+  }
+
+  .Detail-btn {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .Sections-names {
+    padding-left: 30px;
+    /* text-align: left; */
+  }
+  .Law-col-item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .SubLawDetails h3 {
+    font-size: 21px;
+  }
+  .SubLawDetails ul {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  .title-main {
+    padding: 120px 0px 0px 0px;
+  }
+  .quote {
+    padding-top: 30px;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: justify;
+  }
+  .quote-text {
+    padding: 50px 20px 10px 20px;
+  }
+  .quote-text .h3 {
+    font-size: 25px;
+  }
+
+  .quote-icon {
+    font-size: 55px;
+    top: 20px;
+    left: 35px;
+  }
+  .quote-icon1 {
+    font-size: 35px;
+    top: 0px;
+  }
+
+  .spacer {
+    margin-right: 30px;
+  }
+  .marquue span {
+    font-size: 18px;
+  }
+
+  .count-d2 h4 {
+    font-size: 15px;
+  }
+
+  .wrapper .instagram {
+    font-size: 22px;
+    padding: 0px 35px 0px 35px;
+    margin-top: 60px;
+  }
+
+  .works-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .under-footer {
+    font-size: 14px;
+    justify-content: space-around;
+  }
+  .profile-icons {
+    display: flex;
+    justify-content: center;
+    padding-right: 0px;
+  }
+  .profile-icon {
+    font-size: 19px;
+    margin: 0px 13px 0px 13px;
+  }
+  .copyrightsection {
+    padding-left: 0px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 300;
+  }
+  .chapter-name {
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration-thickness: 1.3px;
+    padding-bottom: 20px;
+    /* text-decoration: none;
+    border-top: 1px solid lightgray;
+    padding-top: 20px; */
+  }
+  .Sections-names li {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+
+  .summary p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 300;
+    padding-right: 20px;
+  }
+
+  .vision-p h2 {
+    font-size: 35px;
+  }
+
+  .vision-p p {
+    font-size: 17px;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    line-height: 30px;
+  }
+
+  .path-container {
+    margin-top: -10px;
+  }
+
+  .about-img-outer {
+    margin-left: 12px;
+    margin-top: 20px;
+  }
+
+  .about-para {
+    margin-top: 30px;
+    font-size: 16px;
+    list-style: 26px;
+    text-align: justify;
+  }
+}
